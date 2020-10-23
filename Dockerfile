@@ -1,6 +1,7 @@
 FROM debian:latest
 
 MAINTAINER  Agnaldo Marinho "agnaldoneto@ufpa.br"
+MAINTAINER  Giuseppe Dal Maso "giuseppe@ufpa.br"
 
 COPY sources.list /etc/apt/sources.list
 
@@ -15,6 +16,3 @@ RUN usermod -u 1000 www-data
 EXPOSE 9000
 
 CMD ["php-fpm7.0", "-F"]
-
-
-
